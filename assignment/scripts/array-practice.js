@@ -32,15 +32,16 @@ console.log('--- 3. Accessing items in an array ---');
 console.log('First animal is', animalArray[0])
 
 // 3.a. TODO: Log the second animal in the array 
-console.log('Second food is', favFood[1]);
+console.log('Second food is:', favFood[1]);
 
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
-
+console.log('The last food is:', favFood[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
 
+console.log('Using array length, the last food is:',favFood[favFood.length-1] );
 
 
 // 4. Adding & Removing Array Items
@@ -51,6 +52,8 @@ animalArray.push('penguin');
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
+favFood.push('chocolate cake');
+console.log('Added a fav food to the end,', favFood);
 
 
 
@@ -61,6 +64,9 @@ console.log('The animals are now', animalArray);
 
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
+let removedFood = favFood.pop();
+console.log('Removed the last food', removedFood);
+console.log('The foods are now', favFood);
 
 
 // Example: Add an animal to the beginning using Array.unshift
@@ -68,6 +74,8 @@ animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
+favFood.unshift('apples');
+console.log('Added a food to the beginning:', favFood);
 
 
 // Example: Remove the first animal using Array.shift
@@ -77,6 +85,10 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
+
+removedFood = favFood.shift();
+console.log('removed the first Food', removedFood);
+console.log('The foods are now', favFood);
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.

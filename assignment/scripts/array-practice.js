@@ -97,7 +97,7 @@ secondFood = favFood.indexOf('cookies');
 favFood.splice(secondFood, 1);
 console.log('The second item has now been removed', favFood);
 
-favFood.insert(index, 'pizza');
+favFood.splice(1, 0, 'pizza');
 console.log('The new item has been added in second position', favFood);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array

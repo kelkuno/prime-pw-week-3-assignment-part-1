@@ -93,6 +93,12 @@ console.log('The foods are now', favFood);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+secondFood = favFood.indexOf('cookies');
+favFood.splice(secondFood, 1);
+console.log('The second item has now been removed', favFood);
+
+favFood.insert(index, 'pizza');
+console.log('The new item has been added in second position', favFood);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.

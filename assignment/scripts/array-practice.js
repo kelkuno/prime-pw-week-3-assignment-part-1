@@ -93,19 +93,28 @@ console.log('The foods are now', favFood);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
-secondFood = favFood.indexOf('cookies');
-favFood.splice(secondFood, 1);
-console.log('The second item has now been removed', favFood);
+//secondFood = favFood.indexOf('cookies');
 
+favFood.splice(1, 1);
+console.log('The second item has now been removed', favFood);
 favFood.splice(1, 0, 'pizza');
 console.log('The new item has been added in second position', favFood);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 
+console.log("Here is the array:", favFood);
+
+favFood.reverse();
+
+console.log('Here is the array in reverese', favFood);
+
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+let arrayString = favFood.join(' and ');
+console.log(arrayString);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
